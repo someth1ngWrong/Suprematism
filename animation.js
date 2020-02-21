@@ -1,21 +1,21 @@
 
 let animationAll = anime.timeline({
-  duration: 300,
+  duration: 1000,
   autoplay: false
 })
 
 animationAll
-.add ({
-  // position: absolute,
-  targets: '.box-01',
-  left: -115,
-  top: 300,
-  // rotate:'90',
-})
-.add ({
-  targets: '.box-02',
+  .add ({
+    // position: absolute,
+    targets: '.box-01',
+    left: -115,
+    top: 300,
+    rotate:'[-10,-90]',
+  })
+  .add ({
+    targets: '.box-02',
 
-});
+  });
 
 
 
