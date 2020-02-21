@@ -1,25 +1,27 @@
 
-let animationBox01 = anime({
-  targets: '.box-01',
-  backgroundColor: '#ffffff',
-  left: 30,
-  easing: 'easeInOutQuad',
+let animationAll = anime.timeline({
   duration: 300,
   autoplay: false
 })
 
-// let animationBox02 = anime({
-//   targets: '.box-02',
-//   backgroundColor: '#000000',
-//   easing: 'easeInOutQuad',
-//   duration: 300,
-//   autoplay: false,
-// })
+animationAll
+.add ({
+  // position: absolute,
+  targets: '.box-01',
+  left: -115,
+  top: 300,
+  // rotate:'90',
+})
+.add ({
+  targets: '.box-02',
+
+});
+
 
 
 
 let htmlBox01 = document.getElementById('htmlBox01')
-htmlBox01.onclick = animationBox01.play
+htmlBox01.onclick = animationAll.play
 
 
 
