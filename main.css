@@ -1,6 +1,18 @@
 body {
   background-color: #EBE4CF;
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+.bgimg {
+  margin-top: -24px;
+  width: 100vw;
+  /* opacity: 20%; */
+
+}
+
+#warp {
+  height: 100vw;
+  width: 100vh;
 }
 
 .btn01 {
@@ -33,6 +45,7 @@ body {
 
 }
 
+
 .box-01 {
   position: absolute;
   width: 703px;
@@ -42,6 +55,7 @@ body {
   background: #DA2E31;
   transform: rotate(-10deg);
   z-index: 2;
+  transform-origin: center;
 
 }
 .box-02 {
@@ -52,6 +66,7 @@ body {
   top: 383px;
   border-radius: 100%;
   background: #FFFFFF;
+  z-index: 2;
 }
 
 .box-03 {
@@ -160,6 +175,7 @@ body {
   top: 116px;
 border-radius: 100%;
   background: #DA2E31;
+  z-index: 0;
 }
 .box-14 {
   position: absolute;
@@ -168,6 +184,8 @@ border-radius: 100%;
   left: 699.11px;
   top: 154px;
   background: #000000;
+  z-index: 1;
+
 }
 .box-15 {
   position: absolute;
@@ -178,6 +196,7 @@ border-radius: 100%;
 
   background: #DA2E31;
   transform: rotate(-15deg);
+  z-index: 3;
 }
 .box-16 {
   position: absolute;
@@ -187,6 +206,7 @@ border-radius: 100%;
   top: 315px;
   background: #DA2E31;
   transform: rotate(64deg);
+  z-index: 3;
 }
 .box-17 {
   position: absolute;
@@ -195,7 +215,7 @@ border-radius: 100%;
   left: 1041.11px;
   top: 430px;
   background: #000000;
-  z-index: -1;
+  z-index: 1;
 }
 .box-18 {
   position: absolute;
@@ -225,5 +245,12 @@ border-radius: 100%;
   transform: rotate(-15deg);
 }
 .box-21 {
-
+  position: absolute;
+  width: 356px;
+  height: 13px;
+  left: 830px;
+  top: 347px;
+  background: #000000;
+  z-index: 2;
+  transform: rotate(-38deg);
 }
